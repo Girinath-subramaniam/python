@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie details</title>
+    <style>
+        .logo{
+            width:150px;
+            height:60px;
+        }
+        header {
+            background-color: #666;
+            padding: 10px;
+            {#text-align: center;#}
+            font-size: 35px;
+            color: white;
+        }
+        .header1 {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        footer {
+            background-color: #777;
+            margin-top: 400px;
+            padding: 15px;
+            padding-top: -10px;
+            color: white;
+        }
+        .headoffice{
+            font-size:20px;
+            color: darkblue;
+        }
+        .fotext1{
+            margin-bottom: -10px;
+            margin-top: -5px;
+
+        }
+        .fotext2{
+            margin-bottom: -10px;
+        }
+        .arr{
+            margin-right: 400px;
+        }
+        .arr1{
+            margin-left: 400px;
+            font-weight: bold;
+            font-size: 35px;
+            font-family: "Comic Sans MS";
+        }
+        .font
+        {
+            font-family: "Comic Sans MS";
+        }
+        .z{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+
+<form class="z" action = "http://localhost:5000/result" method = "POST">
+    <header>
+        <table >
+            <tr>
+                <td class="arr">
+                    <img class="logo" src="image/exalca.png">
+                </td>
+                <td >
+                    <p class="arr1">Exalca Movie Reviewer</p>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+        <p align="center"><b class="font">Movie Name :</b><input type = "text" name = "movie" /></p>
+        <p align="center"><input type = "submit" value = "submit" /></p>
+
+
+    <footer>
+        <table>
+            <tr>
+                <td width="500px">
+                    <p class="headoffice font"><b>Head Office:</b></p>
+                    <p class="fotext1 font"> Exalca Technologies private limited,</p>
+                    <p class="fotext2 font"> 822,24th main,HSR layout,</p>
+                    <p class="fotext2 font">Bangalore-560102</p>
+                </td>
+                <td width="700px">
+                    <p class="font"> Contact:+91 804111 5686 | Fax:+91 804111 5686 | support@exalca.com</p>
+                </td>
+                <td width="500px">
+                    <p class="font" align="right">©2016 Exalca technologies pvt.ltd </p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</form>
+
+
+</body>
+</html>
