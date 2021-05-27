@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VALUES</title>
+</head>
+<body>
+{#<p>class={{ b }}</p>#}
+{#<p>family={{ c }}</p>#}
+{#<p>class={{d }}</p>#}
+{#<p>family={{e }}</p>#}
+
+
+{#<p>ce_code table values</p>#}
+{#<table border="1">#}
+{#{% for key,value in a.items() %}#}
+{##}
+{#    <tr>#}
+{#        <th >{{ key }}  </th>#}
+{#        <td >{{ value }}  </td>#}
+{#    </tr>#}
+{#{% endfor %}#}
+{#</table>#}
+
+
+
+{#<table border="1">#}
+{#{% for key,value in d.items() %}#}
+{##}
+{#    <tr>#}
+{#        <th >{{ key }}  </th>#}
+{#        <td >{{ value }}  </td>#}
+{#    </tr>#}
+{#{% endfor %}#}
+{#</table>#}
+
+
+{#<p>ce_hsn table values</p>#}
+{#<table border="1">#}
+{#{% for key,value in f.items() %}#}
+{##}
+{#    <tr>#}
+{#        <th >{{ key }}  </th>#}
+{#        <td >{{ value }}  </td>#}
+{#    </tr>#}
+{#{% endfor %}#}
+{#</table>#}
+
+{#<p>ce_codenm table values</p>#}
+{#<table border="1">#}
+{#{% for key,value in g.items() %}#}
+{##}
+{#    <tr>#}
+{#        <th >{{ key }}  </th>#}
+{#        <td >{{ value }}  </td>#}
+{#    </tr>#}
+{#{% endfor %}#}
+{#</table>#}
+
+
+{#<p>ce_attr table values</p>#}
+{#<table border="1">#}
+{#{% for key,value in h.items() %}#}
+{##}
+{#    <tr>#}
+{#        <th >{{ key }}  </th>#}
+{#        <td >{{ value }}  </td>#}
+{#    </tr>#}
+{#{% endfor %}#}
+{#</table>#}
+
+{#<p>the last values of the table is::::::::::::::::::::::::::</p>#}
+{#<table border="1">#}
+{#     <tr>#}
+{#        <th >code </th>#}
+{#        <td >{{ one }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >text </th>#}
+{#        <td >{{ two }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >class </th>#}
+{#        <td >{{ three }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >family </th>#}
+{#        <td >{{ four }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >hsn code </th>#}
+{#        <td >{{ five }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >hsn text </th>#}
+{#        <td >{{ six }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >tax </th>#}
+{#        <td >{{ seven }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >codenm </th>#}
+{#        <td >{{ eight }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >attrid </th>#}
+{#        <td >{{ nine }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >attr_text </th>#}
+{#        <td >{{ ten }}  </td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <th >attr_type </th>#}
+{#        <td >{{ eleven }}  </td>#}
+{#    </tr>#}
+{#</table>#}
+
+
+
+<table border="1">
+     <tr>
+         <th >code </th>
+         <th >text </th>
+         <th >class </th>
+         <th >family </th>
+         <th >hsn code </th>
+         <th >hsn text </th>
+         <th >tax </th>
+         <th >attr_text </th>
+    </tr>
+    <tr>
+       <td >{{ one }}  </td>
+        <td >{{ two }}  </td>
+        <td >{{ three }}  </td>
+        <td >{{ four }}  </td>
+        <td >{{ five }}  </td>
+        <td >{{ six }}  </td>
+        <td >{{ seven }}  </td>
+        <td >{% for i in list1 %}
+            {{ i }},
+        {% endfor %}</td>
+    </tr>
+
+</table>
+{{ y }}
+</body>
+</html>
