@@ -40,6 +40,24 @@ def hello_world():
 
     return render_template("end.html", pos=pos,neg=neg,avg=avg,resultans=resultdict)
 
+###################################################
+#####for feteching the flimography of the actor 
+from imdb import IMDb
+import json
+ia = IMDb()
+resultdict={}
+count=1
+result=input("enter the actor name:")
+people = ia.search_person(result)
+actorid=people[0].getID()
+actor = ia.get_person(actorid)
+for job in actor['filmography'].keys():
+    for movie in actor['filmography'][job]:
+        print(movie['title'])
+        resultdict[count]=movie['title']
+        count=count+1
+print(resultdict)
+print(json.dumps(resultdict))#####
 
 if __name__ == '__main__':
     app.run()
